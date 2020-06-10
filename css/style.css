@@ -1,0 +1,3759 @@
+.container-clock {
+  display: inline-block;
+  position: absolute;
+  left: 5vw;
+  top: 5rem; }
+  .container-clock .clock {
+    width: 10vw;
+    height: 10vw;
+    position: relative;
+    z-index: 1; }
+    .container-clock .clock .arrow, .container-clock .clock .arrow-m {
+      display: block;
+      width: 1px;
+      height: 25%;
+      border: 1px solid red;
+      transform-origin: left bottom;
+      animation: arrow 1s linear 12 forwards;
+      position: absolute;
+      left: 50%;
+      top: 25%;
+      z-index: 1; }
+      .container-clock .clock .arrow:after, .container-clock .clock .arrow-m:after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-bottom: 0.5vw solid red;
+        border-left: 0.5vw solid transparent;
+        border-right: 0.5vw solid transparent;
+        position: absolute;
+        left: calc(100% - 0.5vw);
+        bottom: 100%; }
+@keyframes arrow {
+  to {
+    transform: rotate(360deg); } }
+    .container-clock .clock .arrow-m {
+      animation: arrow-m 12s linear forwards; }
+@keyframes arrow-m {
+  to {
+    transform: rotate(360deg); } }
+    .container-clock .clock .round {
+      width: 10%;
+      height: 10%;
+      background-color: orange;
+      border-radius: 50%;
+      position: absolute;
+      left: 45%;
+      top: 45%;
+      z-index: 1; }
+    .container-clock .clock .watch-img {
+      width: 12vw;
+      position: absolute;
+      left: calc(50% - 6vw);
+      top: calc(50% - 6vw); }
+  .container-clock .moon {
+    width: 10vw;
+    transform: rotate(-30deg);
+    animation: moon 1s linear infinite alternate;
+    transform-origin: top;
+    text-align: center; }
+    .container-clock .moon .line {
+      width: 1px;
+      height: 7vw;
+      border: 1px solid red;
+      margin: 0 auto; }
+    .container-clock .moon .moon-img {
+      width: 8vw; }
+    .container-clock .moon .santa-img {
+      width: 8vw;
+      position: absolute;
+      left: 30%;
+      transform: rotateY(45deg); }
+@keyframes moon {
+  to {
+    transform: rotate(30deg); } }
+.container-letter {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh; }
+
+.container-hny {
+  position: relative;
+  height: 100vh;
+  overflow: hidden; }
+  .container-hny > span:nth-child(1) {
+    animation: rocket1 30s ease-out 16s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket1 {
+  10% {
+    color: #3e1f6c;
+    left: 77%;
+    top: 28%; }
+  20% {
+    color: #aeae1b;
+    left: 78%;
+    top: 39%; }
+  30% {
+    color: #439af4;
+    left: 87%;
+    top: 27%; }
+  40% {
+    color: #d7a022;
+    left: 68%;
+    top: 30%; }
+  50% {
+    color: #2fd882;
+    left: 65%;
+    top: 43%; }
+  60% {
+    color: #3dc63f;
+    left: 92%;
+    top: 38%; }
+  70% {
+    color: #c1d1f5;
+    left: 87%;
+    top: 22%; }
+  80% {
+    color: #8abb2f;
+    left: 59%;
+    top: 37%; }
+  90% {
+    color: #68d889;
+    left: 56%;
+    top: 30%;
+    transform: rotate(187deg); }
+  100% {
+    color: #17872d;
+    left: 52%;
+    top: 3%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(2) {
+    animation: rocket2 30s ease-out 13s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket2 {
+  10% {
+    color: #03f5a7;
+    left: 51%;
+    top: 27%; }
+  20% {
+    color: #7ec02e;
+    left: 64%;
+    top: 50%; }
+  30% {
+    color: #ddda73;
+    left: 94%;
+    top: 50%; }
+  40% {
+    color: #e35adb;
+    left: 76%;
+    top: 47%; }
+  50% {
+    color: #49d9a1;
+    left: 52%;
+    top: 50%; }
+  60% {
+    color: #980cb3;
+    left: 93%;
+    top: 29%; }
+  70% {
+    color: #c6fde6;
+    left: 66%;
+    top: 34%; }
+  80% {
+    color: #4c6380;
+    left: 71%;
+    top: 44%; }
+  90% {
+    color: #69c2ed;
+    left: 55%;
+    top: 36%;
+    transform: rotate(350deg); }
+  100% {
+    color: #165f3e;
+    left: 59%;
+    top: 3%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(3) {
+    animation: rocket3 30s ease-out 14s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket3 {
+  10% {
+    color: #a57bf6;
+    left: 83%;
+    top: 31%; }
+  20% {
+    color: #a967db;
+    left: 64%;
+    top: 21%; }
+  30% {
+    color: #2dbe09;
+    left: 73%;
+    top: 23%; }
+  40% {
+    color: #b9e3f2;
+    left: 67%;
+    top: 28%; }
+  50% {
+    color: #2cb2be;
+    left: 87%;
+    top: 21%; }
+  60% {
+    color: #65d283;
+    left: 51%;
+    top: 49%; }
+  70% {
+    color: #2208fa;
+    left: 82%;
+    top: 26%; }
+  80% {
+    color: #f11f70;
+    left: 90%;
+    top: 34%; }
+  90% {
+    color: #2a2c48;
+    left: 65%;
+    top: 27%;
+    transform: rotate(278deg); }
+  100% {
+    color: #53571d;
+    left: 66%;
+    top: 3%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(4) {
+    animation: rocket4 30s ease-out 16s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket4 {
+  10% {
+    color: #7e5c99;
+    left: 66%;
+    top: 38%; }
+  20% {
+    color: #640315;
+    left: 94%;
+    top: 21%; }
+  30% {
+    color: #029d9a;
+    left: 56%;
+    top: 22%; }
+  40% {
+    color: #8a33d5;
+    left: 93%;
+    top: 49%; }
+  50% {
+    color: #af0238;
+    left: 70%;
+    top: 45%; }
+  60% {
+    color: #53d330;
+    left: 86%;
+    top: 29%; }
+  70% {
+    color: #c5c9aa;
+    left: 85%;
+    top: 39%; }
+  80% {
+    color: #683071;
+    left: 65%;
+    top: 30%; }
+  90% {
+    color: #61b18e;
+    left: 80%;
+    top: 48%;
+    transform: rotate(357deg); }
+  100% {
+    color: #f08d16;
+    left: 73%;
+    top: 3%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(5) {
+    animation: rocket5 30s ease-out 15s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket5 {
+  10% {
+    color: #1a3086;
+    left: 83%;
+    top: 41%; }
+  20% {
+    color: #83c53c;
+    left: 94%;
+    top: 47%; }
+  30% {
+    color: #3a17a1;
+    left: 78%;
+    top: 22%; }
+  40% {
+    color: #447588;
+    left: 72%;
+    top: 37%; }
+  50% {
+    color: #69863f;
+    left: 72%;
+    top: 27%; }
+  60% {
+    color: #2f80b6;
+    left: 59%;
+    top: 49%; }
+  70% {
+    color: #f6bee2;
+    left: 58%;
+    top: 48%; }
+  80% {
+    color: #d12341;
+    left: 74%;
+    top: 29%; }
+  90% {
+    color: #1c452f;
+    left: 60%;
+    top: 35%;
+    transform: rotate(137deg); }
+  100% {
+    color: #4d1cdb;
+    left: 80%;
+    top: 3%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(6) {
+    animation: rocket6 30s ease-out 15s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket6 {
+  10% {
+    color: #83787b;
+    left: 56%;
+    top: 37%; }
+  20% {
+    color: #5dd966;
+    left: 58%;
+    top: 25%; }
+  30% {
+    color: #7741c0;
+    left: 89%;
+    top: 47%; }
+  40% {
+    color: #e212af;
+    left: 57%;
+    top: 29%; }
+  50% {
+    color: #0d0bfd;
+    left: 66%;
+    top: 47%; }
+  60% {
+    color: #bd59a8;
+    left: 67%;
+    top: 34%; }
+  70% {
+    color: #86ff4c;
+    left: 62%;
+    top: 33%; }
+  80% {
+    color: #449c13;
+    left: 94%;
+    top: 41%; }
+  90% {
+    color: #b01d7c;
+    left: 93%;
+    top: 47%;
+    transform: rotate(99deg); }
+  100% {
+    color: #493c93;
+    left: 38%;
+    top: 15%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(7) {
+    animation: rocket7 30s ease-out 15s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket7 {
+  10% {
+    color: #54ce1e;
+    left: 61%;
+    top: 35%; }
+  20% {
+    color: #5f3f20;
+    left: 71%;
+    top: 37%; }
+  30% {
+    color: #20ba3a;
+    left: 81%;
+    top: 38%; }
+  40% {
+    color: #753c29;
+    left: 58%;
+    top: 35%; }
+  50% {
+    color: #9c750a;
+    left: 57%;
+    top: 23%; }
+  60% {
+    color: #a90e10;
+    left: 87%;
+    top: 28%; }
+  70% {
+    color: #60fc41;
+    left: 73%;
+    top: 44%; }
+  80% {
+    color: #32f345;
+    left: 66%;
+    top: 43%; }
+  90% {
+    color: #925c2f;
+    left: 85%;
+    top: 31%;
+    transform: rotate(342deg); }
+  100% {
+    color: #587b5c;
+    left: 45%;
+    top: 15%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(8) {
+    animation: rocket8 30s ease-out 16s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket8 {
+  10% {
+    color: #73b005;
+    left: 81%;
+    top: 21%; }
+  20% {
+    color: #64051e;
+    left: 95%;
+    top: 48%; }
+  30% {
+    color: #ff71dd;
+    left: 69%;
+    top: 46%; }
+  40% {
+    color: #c0295a;
+    left: 75%;
+    top: 42%; }
+  50% {
+    color: #d7edf7;
+    left: 55%;
+    top: 42%; }
+  60% {
+    color: #14d15b;
+    left: 85%;
+    top: 26%; }
+  70% {
+    color: #444c68;
+    left: 91%;
+    top: 44%; }
+  80% {
+    color: #399f89;
+    left: 71%;
+    top: 47%; }
+  90% {
+    color: #1a0b5a;
+    left: 77%;
+    top: 40%;
+    transform: rotate(240deg); }
+  100% {
+    color: #879114;
+    left: 52%;
+    top: 15%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(9) {
+    animation: rocket9 30s ease-out 15s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket9 {
+  10% {
+    color: #e9919c;
+    left: 83%;
+    top: 34%; }
+  20% {
+    color: #9f3eb1;
+    left: 82%;
+    top: 26%; }
+  30% {
+    color: #bd39a5;
+    left: 82%;
+    top: 48%; }
+  40% {
+    color: #a48171;
+    left: 94%;
+    top: 35%; }
+  50% {
+    color: #1a6079;
+    left: 68%;
+    top: 29%; }
+  60% {
+    color: #6fca2a;
+    left: 64%;
+    top: 49%; }
+  70% {
+    color: #de0db7;
+    left: 60%;
+    top: 22%; }
+  80% {
+    color: #9ef28b;
+    left: 89%;
+    top: 22%; }
+  90% {
+    color: #a5e1e0;
+    left: 73%;
+    top: 36%;
+    transform: rotate(155deg); }
+  100% {
+    color: #a4482f;
+    left: 59%;
+    top: 15%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(10) {
+    animation: rocket10 30s ease-out 16s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket10 {
+  10% {
+    color: #d78c80;
+    left: 54%;
+    top: 23%; }
+  20% {
+    color: #4ce1d6;
+    left: 89%;
+    top: 44%; }
+  30% {
+    color: #41a64c;
+    left: 68%;
+    top: 28%; }
+  40% {
+    color: #3a6b66;
+    left: 68%;
+    top: 31%; }
+  50% {
+    color: #fd8f43;
+    left: 54%;
+    top: 43%; }
+  60% {
+    color: #e8424d;
+    left: 79%;
+    top: 36%; }
+  70% {
+    color: #d738e7;
+    left: 87%;
+    top: 25%; }
+  80% {
+    color: #d4c7d3;
+    left: 88%;
+    top: 23%; }
+  90% {
+    color: #fd12bc;
+    left: 94%;
+    top: 47%;
+    transform: rotate(129deg); }
+  100% {
+    color: #46f125;
+    left: 66%;
+    top: 15%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(11) {
+    animation: rocket11 30s ease-out 16s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket11 {
+  10% {
+    color: #f58c0a;
+    left: 94%;
+    top: 43%; }
+  20% {
+    color: #9b03f3;
+    left: 80%;
+    top: 21%; }
+  30% {
+    color: #5f8e16;
+    left: 67%;
+    top: 49%; }
+  40% {
+    color: #a5d58f;
+    left: 51%;
+    top: 48%; }
+  50% {
+    color: #5f7cb9;
+    left: 94%;
+    top: 25%; }
+  60% {
+    color: #855766;
+    left: 69%;
+    top: 35%; }
+  70% {
+    color: #348c0b;
+    left: 55%;
+    top: 44%; }
+  80% {
+    color: #397570;
+    left: 89%;
+    top: 24%; }
+  90% {
+    color: #7ba7c1;
+    left: 56%;
+    top: 23%;
+    transform: rotate(116deg); }
+  100% {
+    color: #4d040e;
+    left: 73%;
+    top: 15%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(12) {
+    animation: rocket12 30s ease-out 13s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket12 {
+  10% {
+    color: #1c902a;
+    left: 63%;
+    top: 21%; }
+  20% {
+    color: #f050ed;
+    left: 90%;
+    top: 24%; }
+  30% {
+    color: #757a4a;
+    left: 60%;
+    top: 47%; }
+  40% {
+    color: #a0eca6;
+    left: 67%;
+    top: 22%; }
+  50% {
+    color: #5a177e;
+    left: 67%;
+    top: 40%; }
+  60% {
+    color: #8e06ef;
+    left: 91%;
+    top: 34%; }
+  70% {
+    color: #a7b4c9;
+    left: 54%;
+    top: 28%; }
+  80% {
+    color: #c6b8f9;
+    left: 92%;
+    top: 47%; }
+  90% {
+    color: #6573ac;
+    left: 84%;
+    top: 31%;
+    transform: rotate(290deg); }
+  100% {
+    color: #ccd58a;
+    left: 80%;
+    top: 15%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(13) {
+    animation: rocket13 30s ease-out 13s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket13 {
+  10% {
+    color: #21cb80;
+    left: 51%;
+    top: 21%; }
+  20% {
+    color: #f0907d;
+    left: 63%;
+    top: 48%; }
+  30% {
+    color: #bbba6b;
+    left: 93%;
+    top: 29%; }
+  40% {
+    color: #59698f;
+    left: 65%;
+    top: 21%; }
+  50% {
+    color: #27a497;
+    left: 62%;
+    top: 45%; }
+  60% {
+    color: #e2cbce;
+    left: 55%;
+    top: 33%; }
+  70% {
+    color: #c81924;
+    left: 88%;
+    top: 42%; }
+  80% {
+    color: #5889a6;
+    left: 55%;
+    top: 34%; }
+  90% {
+    color: #8d6836;
+    left: 74%;
+    top: 38%;
+    transform: rotate(75deg); }
+  100% {
+    color: #cf0e1d;
+    left: 87%;
+    top: 15%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(14) {
+    animation: rocket14 30s ease-out 13s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket14 {
+  10% {
+    color: #8e20d5;
+    left: 58%;
+    top: 26%; }
+  20% {
+    color: #e30e72;
+    left: 54%;
+    top: 50%; }
+  30% {
+    color: #0accfd;
+    left: 78%;
+    top: 23%; }
+  40% {
+    color: #cd5e3d;
+    left: 75%;
+    top: 33%; }
+  50% {
+    color: #e99333;
+    left: 52%;
+    top: 47%; }
+  60% {
+    color: #4940f3;
+    left: 64%;
+    top: 22%; }
+  70% {
+    color: #0d4cb1;
+    left: 84%;
+    top: 43%; }
+  80% {
+    color: #58ff76;
+    left: 77%;
+    top: 47%; }
+  90% {
+    color: #d51471;
+    left: 54%;
+    top: 37%;
+    transform: rotate(271deg); }
+  100% {
+    color: #f92023;
+    left: 94%;
+    top: 15%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(15) {
+    animation: rocket15 30s ease-out 14s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket15 {
+  10% {
+    color: #059736;
+    left: 63%;
+    top: 30%; }
+  20% {
+    color: #a51265;
+    left: 93%;
+    top: 29%; }
+  30% {
+    color: #271196;
+    left: 69%;
+    top: 47%; }
+  40% {
+    color: #8f2518;
+    left: 68%;
+    top: 39%; }
+  50% {
+    color: #9f04ea;
+    left: 81%;
+    top: 44%; }
+  60% {
+    color: #8db1bf;
+    left: 84%;
+    top: 50%; }
+  70% {
+    color: #d606fa;
+    left: 85%;
+    top: 44%; }
+  80% {
+    color: #3b0ef5;
+    left: 65%;
+    top: 40%; }
+  90% {
+    color: #8a53ad;
+    left: 70%;
+    top: 36%;
+    transform: rotate(341deg); }
+  100% {
+    color: #8ab8bb;
+    left: 59%;
+    top: 27%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(16) {
+    animation: rocket16 30s ease-out 16s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket16 {
+  10% {
+    color: #844fc2;
+    left: 84%;
+    top: 50%; }
+  20% {
+    color: #c3d59f;
+    left: 87%;
+    top: 43%; }
+  30% {
+    color: #07acba;
+    left: 88%;
+    top: 45%; }
+  40% {
+    color: #09d3a2;
+    left: 57%;
+    top: 21%; }
+  50% {
+    color: #dd1e55;
+    left: 79%;
+    top: 38%; }
+  60% {
+    color: #f7bd14;
+    left: 65%;
+    top: 41%; }
+  70% {
+    color: #a4aaf6;
+    left: 95%;
+    top: 27%; }
+  80% {
+    color: #0eaa7e;
+    left: 86%;
+    top: 37%; }
+  90% {
+    color: #f6ce17;
+    left: 81%;
+    top: 45%;
+    transform: rotate(271deg); }
+  100% {
+    color: #0e8045;
+    left: 66%;
+    top: 27%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(17) {
+    animation: rocket17 30s ease-out 16s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket17 {
+  10% {
+    color: #15d39a;
+    left: 62%;
+    top: 24%; }
+  20% {
+    color: #3176f0;
+    left: 87%;
+    top: 31%; }
+  30% {
+    color: #acb441;
+    left: 56%;
+    top: 45%; }
+  40% {
+    color: #cf1b9c;
+    left: 87%;
+    top: 32%; }
+  50% {
+    color: #1a392f;
+    left: 59%;
+    top: 26%; }
+  60% {
+    color: #3fba5f;
+    left: 73%;
+    top: 43%; }
+  70% {
+    color: #cf72a4;
+    left: 91%;
+    top: 39%; }
+  80% {
+    color: #f3923f;
+    left: 54%;
+    top: 42%; }
+  90% {
+    color: #46d43f;
+    left: 85%;
+    top: 21%;
+    transform: rotate(72deg); }
+  100% {
+    color: #8a7d09;
+    left: 73%;
+    top: 27%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(18) {
+    animation: rocket18 30s ease-out 13s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket18 {
+  10% {
+    color: #fc2c7a;
+    left: 69%;
+    top: 39%; }
+  20% {
+    color: #924c8c;
+    left: 90%;
+    top: 42%; }
+  30% {
+    color: #670795;
+    left: 80%;
+    top: 29%; }
+  40% {
+    color: #d36ce1;
+    left: 86%;
+    top: 45%; }
+  50% {
+    color: #c693a1;
+    left: 79%;
+    top: 49%; }
+  60% {
+    color: #f01de4;
+    left: 60%;
+    top: 41%; }
+  70% {
+    color: #fc8b8e;
+    left: 64%;
+    top: 23%; }
+  80% {
+    color: #d37ef8;
+    left: 74%;
+    top: 50%; }
+  90% {
+    color: #284c5b;
+    left: 88%;
+    top: 48%;
+    transform: rotate(237deg); }
+  100% {
+    color: #360764;
+    left: 52%;
+    top: 39%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(19) {
+    animation: rocket19 30s ease-out 16s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket19 {
+  10% {
+    color: #42ed83;
+    left: 80%;
+    top: 33%; }
+  20% {
+    color: #10d85a;
+    left: 68%;
+    top: 28%; }
+  30% {
+    color: #ed3da4;
+    left: 81%;
+    top: 45%; }
+  40% {
+    color: #54b2cf;
+    left: 72%;
+    top: 36%; }
+  50% {
+    color: #6e26e3;
+    left: 94%;
+    top: 37%; }
+  60% {
+    color: #f55f52;
+    left: 55%;
+    top: 32%; }
+  70% {
+    color: #72e3a9;
+    left: 94%;
+    top: 28%; }
+  80% {
+    color: #962829;
+    left: 85%;
+    top: 33%; }
+  90% {
+    color: #9779cb;
+    left: 88%;
+    top: 38%;
+    transform: rotate(335deg); }
+  100% {
+    color: #faa7f0;
+    left: 59%;
+    top: 39%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(20) {
+    animation: rocket20 30s ease-out 15s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket20 {
+  10% {
+    color: #b9a1c5;
+    left: 89%;
+    top: 22%; }
+  20% {
+    color: #17d039;
+    left: 73%;
+    top: 30%; }
+  30% {
+    color: #95f920;
+    left: 61%;
+    top: 22%; }
+  40% {
+    color: #2179b4;
+    left: 82%;
+    top: 43%; }
+  50% {
+    color: #ee0508;
+    left: 66%;
+    top: 50%; }
+  60% {
+    color: #b6ec81;
+    left: 60%;
+    top: 39%; }
+  70% {
+    color: #50d358;
+    left: 93%;
+    top: 37%; }
+  80% {
+    color: #0ef0ab;
+    left: 77%;
+    top: 39%; }
+  90% {
+    color: #34d808;
+    left: 63%;
+    top: 23%;
+    transform: rotate(332deg); }
+  100% {
+    color: #6d12bf;
+    left: 66%;
+    top: 39%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(21) {
+    animation: rocket21 30s ease-out 17s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket21 {
+  10% {
+    color: #25f79e;
+    left: 87%;
+    top: 33%; }
+  20% {
+    color: #e09a25;
+    left: 90%;
+    top: 38%; }
+  30% {
+    color: #715446;
+    left: 76%;
+    top: 27%; }
+  40% {
+    color: #e28e2b;
+    left: 51%;
+    top: 26%; }
+  50% {
+    color: #a07417;
+    left: 75%;
+    top: 39%; }
+  60% {
+    color: #181ecd;
+    left: 67%;
+    top: 32%; }
+  70% {
+    color: #1c3f42;
+    left: 57%;
+    top: 36%; }
+  80% {
+    color: #2d2f16;
+    left: 67%;
+    top: 39%; }
+  90% {
+    color: #da72bc;
+    left: 76%;
+    top: 37%;
+    transform: rotate(247deg); }
+  100% {
+    color: #cd20d5;
+    left: 73%;
+    top: 39%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(22) {
+    animation: rocket22 30s ease-out 14s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket22 {
+  10% {
+    color: #1906e2;
+    left: 80%;
+    top: 36%; }
+  20% {
+    color: #fffca0;
+    left: 85%;
+    top: 25%; }
+  30% {
+    color: #3adf0e;
+    left: 77%;
+    top: 50%; }
+  40% {
+    color: #42d1fb;
+    left: 57%;
+    top: 35%; }
+  50% {
+    color: #029cb5;
+    left: 90%;
+    top: 42%; }
+  60% {
+    color: #b6601b;
+    left: 60%;
+    top: 37%; }
+  70% {
+    color: #1bad70;
+    left: 61%;
+    top: 41%; }
+  80% {
+    color: #e2babf;
+    left: 64%;
+    top: 46%; }
+  90% {
+    color: #88ffb3;
+    left: 76%;
+    top: 42%;
+    transform: rotate(131deg); }
+  100% {
+    color: #63e8c0;
+    left: 80%;
+    top: 39%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(23) {
+    animation: rocket23 30s ease-out 15s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket23 {
+  10% {
+    color: #e4804c;
+    left: 61%;
+    top: 45%; }
+  20% {
+    color: #f88be4;
+    left: 84%;
+    top: 46%; }
+  30% {
+    color: #2c1f45;
+    left: 54%;
+    top: 44%; }
+  40% {
+    color: #acf202;
+    left: 63%;
+    top: 47%; }
+  50% {
+    color: #a70aac;
+    left: 51%;
+    top: 23%; }
+  60% {
+    color: #92f446;
+    left: 81%;
+    top: 48%; }
+  70% {
+    color: #1564c4;
+    left: 93%;
+    top: 26%; }
+  80% {
+    color: #09e48f;
+    left: 87%;
+    top: 38%; }
+  90% {
+    color: #3115da;
+    left: 59%;
+    top: 21%;
+    transform: rotate(295deg); }
+  100% {
+    color: #fa9101;
+    left: 59%;
+    top: 52%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(24) {
+    animation: rocket24 30s ease-out 17s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket24 {
+  10% {
+    color: #9db5d7;
+    left: 95%;
+    top: 45%; }
+  20% {
+    color: #09a4c6;
+    left: 76%;
+    top: 28%; }
+  30% {
+    color: #cb78e9;
+    left: 70%;
+    top: 34%; }
+  40% {
+    color: #1d555f;
+    left: 59%;
+    top: 44%; }
+  50% {
+    color: #8b1e83;
+    left: 75%;
+    top: 23%; }
+  60% {
+    color: #0e4571;
+    left: 82%;
+    top: 40%; }
+  70% {
+    color: #fca029;
+    left: 58%;
+    top: 42%; }
+  80% {
+    color: #69d067;
+    left: 58%;
+    top: 21%; }
+  90% {
+    color: #842f19;
+    left: 60%;
+    top: 32%;
+    transform: rotate(252deg); }
+  100% {
+    color: #170cab;
+    left: 66%;
+    top: 52%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(25) {
+    animation: rocket25 30s ease-out 15s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket25 {
+  10% {
+    color: #8658b4;
+    left: 92%;
+    top: 21%; }
+  20% {
+    color: #b498f9;
+    left: 62%;
+    top: 26%; }
+  30% {
+    color: #9b9f9a;
+    left: 95%;
+    top: 42%; }
+  40% {
+    color: #8666d2;
+    left: 79%;
+    top: 48%; }
+  50% {
+    color: #675c6c;
+    left: 91%;
+    top: 39%; }
+  60% {
+    color: #2f7503;
+    left: 85%;
+    top: 26%; }
+  70% {
+    color: #b4205a;
+    left: 89%;
+    top: 28%; }
+  80% {
+    color: #1066d8;
+    left: 66%;
+    top: 27%; }
+  90% {
+    color: #5a8aa8;
+    left: 86%;
+    top: 35%;
+    transform: rotate(205deg); }
+  100% {
+    color: #8a0e60;
+    left: 73%;
+    top: 52%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(26) {
+    animation: rocket26 30s ease-out 13s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket26 {
+  10% {
+    color: #2da0b0;
+    left: 61%;
+    top: 24%; }
+  20% {
+    color: #36df7c;
+    left: 53%;
+    top: 48%; }
+  30% {
+    color: #849b80;
+    left: 70%;
+    top: 44%; }
+  40% {
+    color: #02b1d6;
+    left: 73%;
+    top: 37%; }
+  50% {
+    color: #27c3b4;
+    left: 84%;
+    top: 37%; }
+  60% {
+    color: #b81a29;
+    left: 60%;
+    top: 38%; }
+  70% {
+    color: #b5f953;
+    left: 63%;
+    top: 35%; }
+  80% {
+    color: #ff1b97;
+    left: 63%;
+    top: 42%; }
+  90% {
+    color: #8ef464;
+    left: 62%;
+    top: 27%;
+    transform: rotate(10deg); }
+  100% {
+    color: #a5423b;
+    left: 56%;
+    top: 64%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(27) {
+    animation: rocket27 30s ease-out 17s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket27 {
+  10% {
+    color: #55611c;
+    left: 85%;
+    top: 30%; }
+  20% {
+    color: #9fc751;
+    left: 55%;
+    top: 34%; }
+  30% {
+    color: #8b1ac0;
+    left: 71%;
+    top: 34%; }
+  40% {
+    color: #b5a8d2;
+    left: 65%;
+    top: 34%; }
+  50% {
+    color: #9aa4de;
+    left: 81%;
+    top: 50%; }
+  60% {
+    color: #5b6078;
+    left: 74%;
+    top: 26%; }
+  70% {
+    color: #a58e58;
+    left: 67%;
+    top: 34%; }
+  80% {
+    color: #2b9ad9;
+    left: 62%;
+    top: 33%; }
+  90% {
+    color: #36e9b2;
+    left: 92%;
+    top: 21%;
+    transform: rotate(180deg); }
+  100% {
+    color: #9e3959;
+    left: 63%;
+    top: 64%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(28) {
+    animation: rocket28 30s ease-out 13s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket28 {
+  10% {
+    color: #8b1c55;
+    left: 81%;
+    top: 41%; }
+  20% {
+    color: #dfaa85;
+    left: 87%;
+    top: 21%; }
+  30% {
+    color: #0bf5b3;
+    left: 88%;
+    top: 42%; }
+  40% {
+    color: #ebb9cb;
+    left: 79%;
+    top: 21%; }
+  50% {
+    color: #b37d43;
+    left: 82%;
+    top: 48%; }
+  60% {
+    color: #e94e6a;
+    left: 85%;
+    top: 43%; }
+  70% {
+    color: #2a4eaf;
+    left: 61%;
+    top: 34%; }
+  80% {
+    color: #42d6aa;
+    left: 93%;
+    top: 33%; }
+  90% {
+    color: #b6b2bb;
+    left: 72%;
+    top: 41%;
+    transform: rotate(333deg); }
+  100% {
+    color: #fd690d;
+    left: 70%;
+    top: 64%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(29) {
+    animation: rocket29 30s ease-out 14s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket29 {
+  10% {
+    color: #60ecac;
+    left: 86%;
+    top: 40%; }
+  20% {
+    color: #e41f34;
+    left: 82%;
+    top: 42%; }
+  30% {
+    color: #c89941;
+    left: 92%;
+    top: 45%; }
+  40% {
+    color: #10faf8;
+    left: 66%;
+    top: 36%; }
+  50% {
+    color: #dec943;
+    left: 61%;
+    top: 43%; }
+  60% {
+    color: #a02b36;
+    left: 82%;
+    top: 24%; }
+  70% {
+    color: #9abd41;
+    left: 63%;
+    top: 37%; }
+  80% {
+    color: #2d8c81;
+    left: 76%;
+    top: 43%; }
+  90% {
+    color: #e96fa6;
+    left: 67%;
+    top: 39%;
+    transform: rotate(39deg); }
+  100% {
+    color: #1c1970;
+    left: 77%;
+    top: 64%;
+    font-size: 5rem;
+    transform: none; } }
+  .container-hny > span:nth-child(30) {
+    animation: rocket30 30s ease-out 13s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket30 {
+  10% {
+    color: #a20ee0;
+    left: 74%;
+    top: 47%; }
+  20% {
+    color: #4b7af8;
+    left: 60%;
+    top: 43%; }
+  30% {
+    color: #1e71fa;
+    left: 59%;
+    top: 36%; }
+  40% {
+    color: #b82011;
+    left: 76%;
+    top: 43%; }
+  50% {
+    color: #07cef0;
+    left: 93%;
+    top: 31%; }
+  60% {
+    color: #6769f5;
+    left: 85%;
+    top: 50%; }
+  70% {
+    color: #effe0d;
+    left: 95%;
+    top: 26%; }
+  80% {
+    color: #16deaa;
+    left: 84%;
+    top: 48%; }
+  90% {
+    color: #19b213;
+    left: 78%;
+    top: 46%;
+    transform: rotate(264deg); }
+  100% {
+    color: #acfd69;
+    left: 53%;
+    top: 76%;
+    font-size: 10rem;
+    transform: none; } }
+  .container-hny > span:nth-child(31) {
+    animation: rocket31 30s ease-out 15s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket31 {
+  10% {
+    color: #ba0fd9;
+    left: 74%;
+    top: 22%; }
+  20% {
+    color: #6a9017;
+    left: 92%;
+    top: 49%; }
+  30% {
+    color: #18f440;
+    left: 74%;
+    top: 48%; }
+  40% {
+    color: #61d242;
+    left: 57%;
+    top: 26%; }
+  50% {
+    color: #ce80c2;
+    left: 52%;
+    top: 30%; }
+  60% {
+    color: #17c159;
+    left: 69%;
+    top: 36%; }
+  70% {
+    color: #afa7e4;
+    left: 69%;
+    top: 24%; }
+  80% {
+    color: #674cb8;
+    left: 63%;
+    top: 34%; }
+  90% {
+    color: #cc5cbc;
+    left: 76%;
+    top: 35%;
+    transform: rotate(85deg); }
+  100% {
+    color: #156848;
+    left: 60%;
+    top: 76%;
+    font-size: 10rem;
+    transform: none; } }
+  .container-hny > span:nth-child(32) {
+    animation: rocket32 30s ease-out 13s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket32 {
+  10% {
+    color: #de2eb1;
+    left: 58%;
+    top: 23%; }
+  20% {
+    color: #51d859;
+    left: 69%;
+    top: 35%; }
+  30% {
+    color: #667436;
+    left: 59%;
+    top: 41%; }
+  40% {
+    color: #5ef97e;
+    left: 95%;
+    top: 40%; }
+  50% {
+    color: #aed87f;
+    left: 67%;
+    top: 25%; }
+  60% {
+    color: #80e305;
+    left: 90%;
+    top: 47%; }
+  70% {
+    color: #4367ff;
+    left: 83%;
+    top: 37%; }
+  80% {
+    color: #d2cfce;
+    left: 79%;
+    top: 27%; }
+  90% {
+    color: #86d808;
+    left: 87%;
+    top: 39%;
+    transform: rotate(330deg); }
+  100% {
+    color: #81c701;
+    left: 67%;
+    top: 76%;
+    font-size: 10rem;
+    transform: none; } }
+  .container-hny > span:nth-child(33) {
+    animation: rocket33 30s ease-out 14s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket33 {
+  10% {
+    color: #8afec8;
+    left: 84%;
+    top: 41%; }
+  20% {
+    color: #366989;
+    left: 59%;
+    top: 41%; }
+  30% {
+    color: #158520;
+    left: 86%;
+    top: 22%; }
+  40% {
+    color: #289f35;
+    left: 95%;
+    top: 45%; }
+  50% {
+    color: #5bd8c6;
+    left: 93%;
+    top: 47%; }
+  60% {
+    color: #6a0869;
+    left: 85%;
+    top: 41%; }
+  70% {
+    color: #6310a4;
+    left: 87%;
+    top: 33%; }
+  80% {
+    color: #752798;
+    left: 88%;
+    top: 45%; }
+  90% {
+    color: #ad6e43;
+    left: 82%;
+    top: 24%;
+    transform: rotate(55deg); }
+  100% {
+    color: #1310f0;
+    left: 74%;
+    top: 76%;
+    font-size: 10rem;
+    transform: none; } }
+  .container-hny > span:nth-child(34) {
+    animation: rocket34 30s ease-out 16s forwards;
+    font-size: 1px;
+    font-weight: 700;
+    position: absolute;
+    left: 20%;
+    top: 100%; }
+@keyframes rocket34 {
+  10% {
+    color: #1d9674;
+    left: 67%;
+    top: 31%; }
+  20% {
+    color: #ec298a;
+    left: 84%;
+    top: 37%; }
+  30% {
+    color: #093dd2;
+    left: 60%;
+    top: 21%; }
+  40% {
+    color: #a41726;
+    left: 91%;
+    top: 31%; }
+  50% {
+    color: #79374e;
+    left: 56%;
+    top: 50%; }
+  60% {
+    color: #f1c463;
+    left: 59%;
+    top: 48%; }
+  70% {
+    color: #eddce7;
+    left: 91%;
+    top: 44%; }
+  80% {
+    color: #59316e;
+    left: 56%;
+    top: 25%; }
+  90% {
+    color: #f8614d;
+    left: 65%;
+    top: 49%;
+    transform: rotate(25deg); }
+  100% {
+    color: #e50434;
+    left: 81%;
+    top: 76%;
+    font-size: 10rem;
+    transform: none; } }
+html {
+  font-size: 10px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #000;
+  font-style: italic; }
+
+.container {
+  position: relative;
+  overflow: hidden;
+  border: 0.5vw solid blue; }
+  .container > i:nth-child(1) {
+    position: absolute;
+    left: 52%;
+    top: 100%;
+    color: white;
+    font-size: 3px;
+    animation: stars1 1s linear infinite;
+    z-index: -5; }
+@keyframes stars1 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(2) {
+    position: absolute;
+    left: 44%;
+    top: 47%;
+    color: white;
+    font-size: 3px;
+    animation: stars2 1s linear infinite;
+    z-index: -5; }
+@keyframes stars2 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(3) {
+    position: absolute;
+    left: 74%;
+    top: 49%;
+    color: white;
+    font-size: 3px;
+    animation: stars3 1s linear infinite;
+    z-index: -5; }
+@keyframes stars3 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(4) {
+    position: absolute;
+    left: 6%;
+    top: 91%;
+    color: white;
+    font-size: 3px;
+    animation: stars4 1s linear infinite;
+    z-index: -5; }
+@keyframes stars4 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(5) {
+    position: absolute;
+    left: 8%;
+    top: 24%;
+    color: white;
+    font-size: 3px;
+    animation: stars5 1s linear infinite;
+    z-index: -5; }
+@keyframes stars5 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(6) {
+    position: absolute;
+    left: 38%;
+    top: 47%;
+    color: white;
+    font-size: 3px;
+    animation: stars6 1s linear infinite;
+    z-index: -5; }
+@keyframes stars6 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(7) {
+    position: absolute;
+    left: 54%;
+    top: 91%;
+    color: white;
+    font-size: 3px;
+    animation: stars7 1s linear infinite;
+    z-index: -5; }
+@keyframes stars7 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(8) {
+    position: absolute;
+    left: 53%;
+    top: 26%;
+    color: white;
+    font-size: 3px;
+    animation: stars8 1s linear infinite;
+    z-index: -5; }
+@keyframes stars8 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(9) {
+    position: absolute;
+    left: 54%;
+    top: 45%;
+    color: white;
+    font-size: 3px;
+    animation: stars9 1s linear infinite;
+    z-index: -5; }
+@keyframes stars9 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(10) {
+    position: absolute;
+    left: 18%;
+    top: 72%;
+    color: white;
+    font-size: 3px;
+    animation: stars10 1s linear infinite;
+    z-index: -5; }
+@keyframes stars10 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(11) {
+    position: absolute;
+    left: 10%;
+    top: 49%;
+    color: white;
+    font-size: 3px;
+    animation: stars11 1s linear infinite;
+    z-index: -5; }
+@keyframes stars11 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(12) {
+    position: absolute;
+    left: 25%;
+    top: 2%;
+    color: white;
+    font-size: 3px;
+    animation: stars12 1s linear infinite;
+    z-index: -5; }
+@keyframes stars12 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(13) {
+    position: absolute;
+    left: 49%;
+    top: 44%;
+    color: white;
+    font-size: 3px;
+    animation: stars13 1s linear infinite;
+    z-index: -5; }
+@keyframes stars13 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(14) {
+    position: absolute;
+    left: 24%;
+    top: 89%;
+    color: white;
+    font-size: 3px;
+    animation: stars14 1s linear infinite;
+    z-index: -5; }
+@keyframes stars14 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(15) {
+    position: absolute;
+    left: 99%;
+    top: 63%;
+    color: white;
+    font-size: 3px;
+    animation: stars15 1s linear infinite;
+    z-index: -5; }
+@keyframes stars15 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(16) {
+    position: absolute;
+    left: 42%;
+    top: 18%;
+    color: white;
+    font-size: 3px;
+    animation: stars16 1s linear infinite;
+    z-index: -5; }
+@keyframes stars16 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(17) {
+    position: absolute;
+    left: 22%;
+    top: 67%;
+    color: white;
+    font-size: 3px;
+    animation: stars17 1s linear infinite;
+    z-index: -5; }
+@keyframes stars17 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(18) {
+    position: absolute;
+    left: 91%;
+    top: 15%;
+    color: white;
+    font-size: 3px;
+    animation: stars18 1s linear infinite;
+    z-index: -5; }
+@keyframes stars18 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(19) {
+    position: absolute;
+    left: 81%;
+    top: 18%;
+    color: white;
+    font-size: 3px;
+    animation: stars19 1s linear infinite;
+    z-index: -5; }
+@keyframes stars19 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(20) {
+    position: absolute;
+    left: 24%;
+    top: 6%;
+    color: white;
+    font-size: 3px;
+    animation: stars20 1s linear infinite;
+    z-index: -5; }
+@keyframes stars20 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(21) {
+    position: absolute;
+    left: 68%;
+    top: 23%;
+    color: white;
+    font-size: 3px;
+    animation: stars21 1s linear infinite;
+    z-index: -5; }
+@keyframes stars21 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(22) {
+    position: absolute;
+    left: 14%;
+    top: 61%;
+    color: white;
+    font-size: 3px;
+    animation: stars22 1s linear infinite;
+    z-index: -5; }
+@keyframes stars22 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(23) {
+    position: absolute;
+    left: 15%;
+    top: 56%;
+    color: white;
+    font-size: 3px;
+    animation: stars23 1s linear infinite;
+    z-index: -5; }
+@keyframes stars23 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(24) {
+    position: absolute;
+    left: 68%;
+    top: 10%;
+    color: white;
+    font-size: 3px;
+    animation: stars24 1s linear infinite;
+    z-index: -5; }
+@keyframes stars24 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(25) {
+    position: absolute;
+    left: 55%;
+    top: 93%;
+    color: white;
+    font-size: 3px;
+    animation: stars25 1s linear infinite;
+    z-index: -5; }
+@keyframes stars25 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(26) {
+    position: absolute;
+    left: 49%;
+    top: 30%;
+    color: white;
+    font-size: 3px;
+    animation: stars26 1s linear infinite;
+    z-index: -5; }
+@keyframes stars26 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(27) {
+    position: absolute;
+    left: 80%;
+    top: 84%;
+    color: white;
+    font-size: 3px;
+    animation: stars27 1s linear infinite;
+    z-index: -5; }
+@keyframes stars27 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(28) {
+    position: absolute;
+    left: 58%;
+    top: 18%;
+    color: white;
+    font-size: 3px;
+    animation: stars28 1s linear infinite;
+    z-index: -5; }
+@keyframes stars28 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(29) {
+    position: absolute;
+    left: 88%;
+    top: 25%;
+    color: white;
+    font-size: 3px;
+    animation: stars29 1s linear infinite;
+    z-index: -5; }
+@keyframes stars29 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(30) {
+    position: absolute;
+    left: 69%;
+    top: 87%;
+    color: white;
+    font-size: 3px;
+    animation: stars30 1s linear infinite;
+    z-index: -5; }
+@keyframes stars30 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(31) {
+    position: absolute;
+    left: 29%;
+    top: 83%;
+    color: white;
+    font-size: 3px;
+    animation: stars31 1s linear infinite;
+    z-index: -5; }
+@keyframes stars31 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(32) {
+    position: absolute;
+    left: 86%;
+    top: 19%;
+    color: white;
+    font-size: 3px;
+    animation: stars32 1s linear infinite;
+    z-index: -5; }
+@keyframes stars32 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(33) {
+    position: absolute;
+    left: 33%;
+    top: 88%;
+    color: white;
+    font-size: 3px;
+    animation: stars33 1s linear infinite;
+    z-index: -5; }
+@keyframes stars33 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(34) {
+    position: absolute;
+    left: 36%;
+    top: 25%;
+    color: white;
+    font-size: 3px;
+    animation: stars34 1s linear infinite;
+    z-index: -5; }
+@keyframes stars34 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(35) {
+    position: absolute;
+    left: 18%;
+    top: 13%;
+    color: white;
+    font-size: 3px;
+    animation: stars35 1s linear infinite;
+    z-index: -5; }
+@keyframes stars35 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(36) {
+    position: absolute;
+    left: 91%;
+    top: 51%;
+    color: white;
+    font-size: 3px;
+    animation: stars36 1s linear infinite;
+    z-index: -5; }
+@keyframes stars36 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(37) {
+    position: absolute;
+    left: 100%;
+    top: 87%;
+    color: white;
+    font-size: 3px;
+    animation: stars37 1s linear infinite;
+    z-index: -5; }
+@keyframes stars37 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(38) {
+    position: absolute;
+    left: 89%;
+    top: 92%;
+    color: white;
+    font-size: 3px;
+    animation: stars38 1s linear infinite;
+    z-index: -5; }
+@keyframes stars38 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(39) {
+    position: absolute;
+    left: 76%;
+    top: 15%;
+    color: white;
+    font-size: 3px;
+    animation: stars39 1s linear infinite;
+    z-index: -5; }
+@keyframes stars39 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(40) {
+    position: absolute;
+    left: 95%;
+    top: 89%;
+    color: white;
+    font-size: 3px;
+    animation: stars40 1s linear infinite;
+    z-index: -5; }
+@keyframes stars40 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(41) {
+    position: absolute;
+    left: 70%;
+    top: 96%;
+    color: white;
+    font-size: 3px;
+    animation: stars41 1s linear infinite;
+    z-index: -5; }
+@keyframes stars41 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(42) {
+    position: absolute;
+    left: 41%;
+    top: 49%;
+    color: white;
+    font-size: 3px;
+    animation: stars42 1s linear infinite;
+    z-index: -5; }
+@keyframes stars42 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(43) {
+    position: absolute;
+    left: 56%;
+    top: 60%;
+    color: white;
+    font-size: 3px;
+    animation: stars43 1s linear infinite;
+    z-index: -5; }
+@keyframes stars43 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(44) {
+    position: absolute;
+    left: 15%;
+    top: 59%;
+    color: white;
+    font-size: 3px;
+    animation: stars44 1s linear infinite;
+    z-index: -5; }
+@keyframes stars44 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(45) {
+    position: absolute;
+    left: 87%;
+    top: 53%;
+    color: white;
+    font-size: 3px;
+    animation: stars45 1s linear infinite;
+    z-index: -5; }
+@keyframes stars45 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(46) {
+    position: absolute;
+    left: 5%;
+    top: 67%;
+    color: white;
+    font-size: 3px;
+    animation: stars46 1s linear infinite;
+    z-index: -5; }
+@keyframes stars46 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(47) {
+    position: absolute;
+    left: 58%;
+    top: 36%;
+    color: white;
+    font-size: 3px;
+    animation: stars47 1s linear infinite;
+    z-index: -5; }
+@keyframes stars47 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(48) {
+    position: absolute;
+    left: 22%;
+    top: 27%;
+    color: white;
+    font-size: 3px;
+    animation: stars48 1s linear infinite;
+    z-index: -5; }
+@keyframes stars48 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(49) {
+    position: absolute;
+    left: 75%;
+    top: 80%;
+    color: white;
+    font-size: 3px;
+    animation: stars49 1s linear infinite;
+    z-index: -5; }
+@keyframes stars49 {
+  to {
+    font-size: 5px; } }
+  .container > i:nth-child(50) {
+    position: absolute;
+    left: 47%;
+    top: 92%;
+    color: white;
+    font-size: 3px;
+    animation: stars50 1s linear infinite;
+    z-index: -5; }
+@keyframes stars50 {
+  to {
+    font-size: 5px; } }
+.container-tree {
+  width: 50vw;
+  padding-top: 2rem;
+  text-align: center;
+  margin: 0 3vw;
+  position: relative; }
+
+.star {
+  color: red;
+  font-size: 5rem;
+  animation: star 3s linear infinite 12s alternate;
+  opacity: 0.1; }
+@keyframes star {
+  from {
+    opacity: 1; }
+  to {
+    color: yellow;
+    transform: rotateY(360deg);
+    opacity: 1; } }
+.airplane-img {
+  display: block;
+  height: 7vh;
+  margin: 0 auto; }
+
+.tree {
+  display: inline-block;
+  position: relative; }
+  .tree img:nth-child(1), .tree div:nth-child(1) {
+    width: 2vw; }
+  .tree img:nth-child(2), .tree div:nth-child(2) {
+    width: 4vw; }
+  .tree img:nth-child(3), .tree div:nth-child(3) {
+    width: 6vw; }
+  .tree img:nth-child(4), .tree div:nth-child(4) {
+    width: 8vw; }
+  .tree img:nth-child(5), .tree div:nth-child(5) {
+    width: 10vw; }
+  .tree img:nth-child(6), .tree div:nth-child(6) {
+    width: 12vw; }
+  .tree img:nth-child(7), .tree div:nth-child(7) {
+    width: 14vw; }
+  .tree img:nth-child(8), .tree div:nth-child(8) {
+    width: 16vw; }
+  .tree img:nth-child(9), .tree div:nth-child(9) {
+    width: 18vw; }
+
+.cloud {
+  position: relative;
+  margin: 0 auto;
+  height: 10vh; }
+  .cloud > i:nth-child(1) {
+    font-size: 4rem;
+    color: gray;
+    animation: cloud1 50000ms linear infinite alternate;
+    position: absolute;
+    left: 94%;
+    top: 3vh;
+    z-index: -1; }
+@keyframes cloud1 {
+  to {
+    font-size: 5rem;
+    left: 45%;
+    top: 2%; } }
+  .cloud > i:nth-child(2) {
+    font-size: 5rem;
+    color: gray;
+    animation: cloud2 50000ms linear infinite alternate;
+    position: absolute;
+    left: 95%;
+    top: 3vh;
+    z-index: -1; }
+@keyframes cloud2 {
+  to {
+    font-size: 3rem;
+    left: 28%;
+    top: 4%; } }
+  .cloud > i:nth-child(3) {
+    font-size: 2rem;
+    color: gray;
+    animation: cloud3 50000ms linear infinite alternate;
+    position: absolute;
+    left: 78%;
+    top: 1vh;
+    z-index: -1; }
+@keyframes cloud3 {
+  to {
+    font-size: 3rem;
+    left: 42%;
+    top: 1%; } }
+  .cloud > i:nth-child(4) {
+    font-size: 1rem;
+    color: gray;
+    animation: cloud4 50000ms linear infinite alternate;
+    position: absolute;
+    left: 2%;
+    top: 3vh;
+    z-index: -1; }
+@keyframes cloud4 {
+  to {
+    font-size: 2rem;
+    left: 71%;
+    top: 1%; } }
+  .cloud > i:nth-child(5) {
+    font-size: 3rem;
+    color: gray;
+    animation: cloud5 50000ms linear infinite alternate;
+    position: absolute;
+    left: 31%;
+    top: 1vh;
+    z-index: -1; }
+@keyframes cloud5 {
+  to {
+    font-size: 1rem;
+    left: 51%;
+    top: 5%; } }
+  .cloud > i:nth-child(6) {
+    font-size: 3rem;
+    color: gray;
+    animation: cloud6 50000ms linear infinite alternate;
+    position: absolute;
+    left: 68%;
+    top: 5vh;
+    z-index: -1; }
+@keyframes cloud6 {
+  to {
+    font-size: 4rem;
+    left: 35%;
+    top: 2%; } }
+  .cloud > i:nth-child(7) {
+    font-size: 4rem;
+    color: gray;
+    animation: cloud7 50000ms linear infinite alternate;
+    position: absolute;
+    left: 14%;
+    top: 1vh;
+    z-index: -1; }
+@keyframes cloud7 {
+  to {
+    font-size: 2rem;
+    left: 5%;
+    top: 1%; } }
+  .cloud > i:nth-child(8) {
+    font-size: 3rem;
+    color: gray;
+    animation: cloud8 50000ms linear infinite alternate;
+    position: absolute;
+    left: 59%;
+    top: 2vh;
+    z-index: -1; }
+@keyframes cloud8 {
+  to {
+    font-size: 2rem;
+    left: 19%;
+    top: 1%; } }
+  .cloud > i:nth-child(9) {
+    font-size: 5rem;
+    color: gray;
+    animation: cloud9 50000ms linear infinite alternate;
+    position: absolute;
+    left: 18%;
+    top: 4vh;
+    z-index: -1; }
+@keyframes cloud9 {
+  to {
+    font-size: 5rem;
+    left: 91%;
+    top: 3%; } }
+  .cloud > i:nth-child(10) {
+    font-size: 4rem;
+    color: gray;
+    animation: cloud10 50000ms linear infinite alternate;
+    position: absolute;
+    left: 39%;
+    top: 1vh;
+    z-index: -1; }
+@keyframes cloud10 {
+  to {
+    font-size: 5rem;
+    left: 85%;
+    top: 3%; } }
+  .cloud > i:nth-child(11) {
+    font-size: 5rem;
+    color: gray;
+    animation: cloud11 50000ms linear infinite alternate;
+    position: absolute;
+    left: 22%;
+    top: 3vh;
+    z-index: -1; }
+@keyframes cloud11 {
+  to {
+    font-size: 1rem;
+    left: 12%;
+    top: 1%; } }
+  .cloud > i:nth-child(12) {
+    font-size: 4rem;
+    color: gray;
+    animation: cloud12 50000ms linear infinite alternate;
+    position: absolute;
+    left: 96%;
+    top: 2vh;
+    z-index: -1; }
+@keyframes cloud12 {
+  to {
+    font-size: 5rem;
+    left: 25%;
+    top: 4%; } }
+  .cloud > i:nth-child(13) {
+    font-size: 4rem;
+    color: gray;
+    animation: cloud13 50000ms linear infinite alternate;
+    position: absolute;
+    left: 52%;
+    top: 1vh;
+    z-index: -1; }
+@keyframes cloud13 {
+  to {
+    font-size: 5rem;
+    left: 29%;
+    top: 1%; } }
+  .cloud > i:nth-child(14) {
+    font-size: 4rem;
+    color: gray;
+    animation: cloud14 50000ms linear infinite alternate;
+    position: absolute;
+    left: 60%;
+    top: 1vh;
+    z-index: -1; }
+@keyframes cloud14 {
+  to {
+    font-size: 1rem;
+    left: 16%;
+    top: 5%; } }
+  .cloud > i:nth-child(15) {
+    font-size: 1rem;
+    color: gray;
+    animation: cloud15 50000ms linear infinite alternate;
+    position: absolute;
+    left: 17%;
+    top: 3vh;
+    z-index: -1; }
+@keyframes cloud15 {
+  to {
+    font-size: 5rem;
+    left: 53%;
+    top: 1%; } }
+  .cloud > i:nth-child(16) {
+    font-size: 2rem;
+    color: gray;
+    animation: cloud16 50000ms linear infinite alternate;
+    position: absolute;
+    left: 9%;
+    top: 3vh;
+    z-index: -1; }
+@keyframes cloud16 {
+  to {
+    font-size: 2rem;
+    left: 40%;
+    top: 1%; } }
+  .cloud > i:nth-child(17) {
+    font-size: 1rem;
+    color: gray;
+    animation: cloud17 50000ms linear infinite alternate;
+    position: absolute;
+    left: 53%;
+    top: 1vh;
+    z-index: -1; }
+@keyframes cloud17 {
+  to {
+    font-size: 4rem;
+    left: 38%;
+    top: 3%; } }
+  .cloud > i:nth-child(18) {
+    font-size: 3rem;
+    color: gray;
+    animation: cloud18 50000ms linear infinite alternate;
+    position: absolute;
+    left: 91%;
+    top: 5vh;
+    z-index: -1; }
+@keyframes cloud18 {
+  to {
+    font-size: 1rem;
+    left: 2%;
+    top: 4%; } }
+  .cloud > i:nth-child(19) {
+    font-size: 1rem;
+    color: gray;
+    animation: cloud19 50000ms linear infinite alternate;
+    position: absolute;
+    left: 61%;
+    top: 1vh;
+    z-index: -1; }
+@keyframes cloud19 {
+  to {
+    font-size: 5rem;
+    left: 95%;
+    top: 1%; } }
+  .cloud > i:nth-child(20) {
+    font-size: 2rem;
+    color: gray;
+    animation: cloud20 50000ms linear infinite alternate;
+    position: absolute;
+    left: 75%;
+    top: 4vh;
+    z-index: -1; }
+@keyframes cloud20 {
+  to {
+    font-size: 5rem;
+    left: 83%;
+    top: 4%; } }
+  .cloud > i:nth-child(21) {
+    font-size: 3rem;
+    color: gray;
+    animation: cloud21 50000ms linear infinite alternate;
+    position: absolute;
+    left: 61%;
+    top: 4vh;
+    z-index: -1; }
+@keyframes cloud21 {
+  to {
+    font-size: 4rem;
+    left: 39%;
+    top: 5%; } }
+  .cloud > i:nth-child(22) {
+    font-size: 3rem;
+    color: gray;
+    animation: cloud22 50000ms linear infinite alternate;
+    position: absolute;
+    left: 7%;
+    top: 5vh;
+    z-index: -1; }
+@keyframes cloud22 {
+  to {
+    font-size: 4rem;
+    left: 53%;
+    top: 1%; } }
+  .cloud > i:nth-child(23) {
+    font-size: 2rem;
+    color: gray;
+    animation: cloud23 50000ms linear infinite alternate;
+    position: absolute;
+    left: 14%;
+    top: 2vh;
+    z-index: -1; }
+@keyframes cloud23 {
+  to {
+    font-size: 2rem;
+    left: 51%;
+    top: 2%; } }
+  .cloud > i:nth-child(24) {
+    font-size: 4rem;
+    color: gray;
+    animation: cloud24 50000ms linear infinite alternate;
+    position: absolute;
+    left: 40%;
+    top: 4vh;
+    z-index: -1; }
+@keyframes cloud24 {
+  to {
+    font-size: 4rem;
+    left: 2%;
+    top: 1%; } }
+  .cloud > i:nth-child(25) {
+    font-size: 2rem;
+    color: gray;
+    animation: cloud25 50000ms linear infinite alternate;
+    position: absolute;
+    left: 56%;
+    top: 2vh;
+    z-index: -1; }
+@keyframes cloud25 {
+  to {
+    font-size: 2rem;
+    left: 92%;
+    top: 3%; } }
+  .cloud > i:nth-child(26) {
+    font-size: 4rem;
+    color: gray;
+    animation: cloud26 50000ms linear infinite alternate;
+    position: absolute;
+    left: 15%;
+    top: 3vh;
+    z-index: -1; }
+@keyframes cloud26 {
+  to {
+    font-size: 3rem;
+    left: 85%;
+    top: 2%; } }
+  .cloud > i:nth-child(27) {
+    font-size: 3rem;
+    color: gray;
+    animation: cloud27 50000ms linear infinite alternate;
+    position: absolute;
+    left: 15%;
+    top: 1vh;
+    z-index: -1; }
+@keyframes cloud27 {
+  to {
+    font-size: 4rem;
+    left: 75%;
+    top: 2%; } }
+  .cloud > i:nth-child(28) {
+    font-size: 5rem;
+    color: gray;
+    animation: cloud28 50000ms linear infinite alternate;
+    position: absolute;
+    left: 48%;
+    top: 1vh;
+    z-index: -1; }
+@keyframes cloud28 {
+  to {
+    font-size: 3rem;
+    left: 49%;
+    top: 1%; } }
+  .cloud > i:nth-child(29) {
+    font-size: 4rem;
+    color: gray;
+    animation: cloud29 50000ms linear infinite alternate;
+    position: absolute;
+    left: 42%;
+    top: 4vh;
+    z-index: -1; }
+@keyframes cloud29 {
+  to {
+    font-size: 3rem;
+    left: 32%;
+    top: 5%; } }
+  .cloud > i:nth-child(30) {
+    font-size: 5rem;
+    color: gray;
+    animation: cloud30 50000ms linear infinite alternate;
+    position: absolute;
+    left: 69%;
+    top: 5vh;
+    z-index: -1; }
+@keyframes cloud30 {
+  to {
+    font-size: 4rem;
+    left: 84%;
+    top: 2%; } }
+  .cloud > i:nth-child(31) {
+    font-size: 1rem;
+    color: gray;
+    animation: cloud31 50000ms linear infinite alternate;
+    position: absolute;
+    left: 82%;
+    top: 2vh;
+    z-index: -1; }
+@keyframes cloud31 {
+  to {
+    font-size: 5rem;
+    left: 49%;
+    top: 4%; } }
+  .cloud > i:nth-child(32) {
+    font-size: 1rem;
+    color: gray;
+    animation: cloud32 50000ms linear infinite alternate;
+    position: absolute;
+    left: 91%;
+    top: 4vh;
+    z-index: -1; }
+@keyframes cloud32 {
+  to {
+    font-size: 1rem;
+    left: 89%;
+    top: 4%; } }
+  .cloud > i:nth-child(33) {
+    font-size: 4rem;
+    color: gray;
+    animation: cloud33 50000ms linear infinite alternate;
+    position: absolute;
+    left: 44%;
+    top: 1vh;
+    z-index: -1; }
+@keyframes cloud33 {
+  to {
+    font-size: 4rem;
+    left: 13%;
+    top: 4%; } }
+  .cloud > i:nth-child(34) {
+    font-size: 1rem;
+    color: gray;
+    animation: cloud34 50000ms linear infinite alternate;
+    position: absolute;
+    left: 57%;
+    top: 4vh;
+    z-index: -1; }
+@keyframes cloud34 {
+  to {
+    font-size: 5rem;
+    left: 6%;
+    top: 4%; } }
+  .cloud > i:nth-child(35) {
+    font-size: 2rem;
+    color: gray;
+    animation: cloud35 50000ms linear infinite alternate;
+    position: absolute;
+    left: 26%;
+    top: 2vh;
+    z-index: -1; }
+@keyframes cloud35 {
+  to {
+    font-size: 4rem;
+    left: 75%;
+    top: 2%; } }
+  .cloud > i:nth-child(36) {
+    font-size: 5rem;
+    color: gray;
+    animation: cloud36 50000ms linear infinite alternate;
+    position: absolute;
+    left: 27%;
+    top: 4vh;
+    z-index: -1; }
+@keyframes cloud36 {
+  to {
+    font-size: 2rem;
+    left: 64%;
+    top: 3%; } }
+  .cloud > i:nth-child(37) {
+    font-size: 1rem;
+    color: gray;
+    animation: cloud37 50000ms linear infinite alternate;
+    position: absolute;
+    left: 74%;
+    top: 2vh;
+    z-index: -1; }
+@keyframes cloud37 {
+  to {
+    font-size: 4rem;
+    left: 97%;
+    top: 5%; } }
+  .cloud > i:nth-child(38) {
+    font-size: 2rem;
+    color: gray;
+    animation: cloud38 50000ms linear infinite alternate;
+    position: absolute;
+    left: 17%;
+    top: 5vh;
+    z-index: -1; }
+@keyframes cloud38 {
+  to {
+    font-size: 3rem;
+    left: 7%;
+    top: 3%; } }
+  .cloud > i:nth-child(39) {
+    font-size: 1rem;
+    color: gray;
+    animation: cloud39 50000ms linear infinite alternate;
+    position: absolute;
+    left: 1%;
+    top: 3vh;
+    z-index: -1; }
+@keyframes cloud39 {
+  to {
+    font-size: 4rem;
+    left: 92%;
+    top: 2%; } }
+  .cloud > i:nth-child(40) {
+    font-size: 5rem;
+    color: gray;
+    animation: cloud40 50000ms linear infinite alternate;
+    position: absolute;
+    left: 43%;
+    top: 3vh;
+    z-index: -1; }
+@keyframes cloud40 {
+  to {
+    font-size: 2rem;
+    left: 16%;
+    top: 4%; } }
+  .cloud > i:nth-child(41) {
+    font-size: 1rem;
+    color: gray;
+    animation: cloud41 50000ms linear infinite alternate;
+    position: absolute;
+    left: 73%;
+    top: 3vh;
+    z-index: -1; }
+@keyframes cloud41 {
+  to {
+    font-size: 4rem;
+    left: 10%;
+    top: 1%; } }
+  .cloud > i:nth-child(42) {
+    font-size: 3rem;
+    color: gray;
+    animation: cloud42 50000ms linear infinite alternate;
+    position: absolute;
+    left: 80%;
+    top: 3vh;
+    z-index: -1; }
+@keyframes cloud42 {
+  to {
+    font-size: 5rem;
+    left: 32%;
+    top: 2%; } }
+  .cloud > i:nth-child(43) {
+    font-size: 5rem;
+    color: gray;
+    animation: cloud43 50000ms linear infinite alternate;
+    position: absolute;
+    left: 43%;
+    top: 5vh;
+    z-index: -1; }
+@keyframes cloud43 {
+  to {
+    font-size: 4rem;
+    left: 98%;
+    top: 2%; } }
+  .cloud > i:nth-child(44) {
+    font-size: 2rem;
+    color: gray;
+    animation: cloud44 50000ms linear infinite alternate;
+    position: absolute;
+    left: 89%;
+    top: 1vh;
+    z-index: -1; }
+@keyframes cloud44 {
+  to {
+    font-size: 2rem;
+    left: 18%;
+    top: 3%; } }
+  .cloud > i:nth-child(45) {
+    font-size: 5rem;
+    color: gray;
+    animation: cloud45 50000ms linear infinite alternate;
+    position: absolute;
+    left: 96%;
+    top: 5vh;
+    z-index: -1; }
+@keyframes cloud45 {
+  to {
+    font-size: 5rem;
+    left: 97%;
+    top: 3%; } }
+  .cloud > i:nth-child(46) {
+    font-size: 2rem;
+    color: gray;
+    animation: cloud46 50000ms linear infinite alternate;
+    position: absolute;
+    left: 60%;
+    top: 1vh;
+    z-index: -1; }
+@keyframes cloud46 {
+  to {
+    font-size: 2rem;
+    left: 21%;
+    top: 4%; } }
+  .cloud > i:nth-child(47) {
+    font-size: 1rem;
+    color: gray;
+    animation: cloud47 50000ms linear infinite alternate;
+    position: absolute;
+    left: 25%;
+    top: 4vh;
+    z-index: -1; }
+@keyframes cloud47 {
+  to {
+    font-size: 2rem;
+    left: 97%;
+    top: 1%; } }
+  .cloud > i:nth-child(48) {
+    font-size: 5rem;
+    color: gray;
+    animation: cloud48 50000ms linear infinite alternate;
+    position: absolute;
+    left: 76%;
+    top: 3vh;
+    z-index: -1; }
+@keyframes cloud48 {
+  to {
+    font-size: 4rem;
+    left: 2%;
+    top: 5%; } }
+  .cloud > i:nth-child(49) {
+    font-size: 3rem;
+    color: gray;
+    animation: cloud49 50000ms linear infinite alternate;
+    position: absolute;
+    left: 95%;
+    top: 1vh;
+    z-index: -1; }
+@keyframes cloud49 {
+  to {
+    font-size: 3rem;
+    left: 14%;
+    top: 5%; } }
+  .cloud > i:nth-child(50) {
+    font-size: 2rem;
+    color: gray;
+    animation: cloud50 50000ms linear infinite alternate;
+    position: absolute;
+    left: 12%;
+    top: 5vh;
+    z-index: -1; }
+@keyframes cloud50 {
+  to {
+    font-size: 2rem;
+    left: 22%;
+    top: 3%; } }
+.lights {
+  position: absolute;
+  opacity: 0.5;
+  bottom: 0; }
+
+.light, .light1, .light2 {
+  margin: 4vh auto 0;
+  height: 3vh;
+  border-radius: 50% 50% 40% 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end; }
+  .light > i:nth-child(1), .light1 > i:nth-child(1), .light2 > i:nth-child(1) {
+    animation: lamp1 995ms linear infinite 12s;
+    color: red;
+    font-weight: 700;
+    opacity: 0;
+    font-size: 1.5rem;
+    transform: rotateX(180deg); }
+@keyframes lamp1 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+  .light > i:nth-child(2), .light1 > i:nth-child(2), .light2 > i:nth-child(2) {
+    animation: lamp2 877ms linear infinite 12s;
+    color: red;
+    font-weight: 700;
+    opacity: 0;
+    font-size: 1.5rem;
+    transform: rotateX(180deg); }
+@keyframes lamp2 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+  .light > i:nth-child(3), .light1 > i:nth-child(3), .light2 > i:nth-child(3) {
+    animation: lamp3 643ms linear infinite 12s;
+    color: red;
+    font-weight: 700;
+    opacity: 0;
+    font-size: 1.5rem;
+    transform: rotateX(180deg); }
+@keyframes lamp3 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+  .light > i:nth-child(4), .light1 > i:nth-child(4), .light2 > i:nth-child(4) {
+    animation: lamp4 808ms linear infinite 12s;
+    color: red;
+    font-weight: 700;
+    opacity: 0;
+    font-size: 1.5rem;
+    transform: rotateX(180deg); }
+@keyframes lamp4 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+  .light > i:nth-child(5), .light1 > i:nth-child(5), .light2 > i:nth-child(5) {
+    animation: lamp5 873ms linear infinite 12s;
+    color: red;
+    font-weight: 700;
+    opacity: 0;
+    font-size: 1.5rem;
+    transform: rotateX(180deg); }
+@keyframes lamp5 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+  .light > i:nth-child(6), .light1 > i:nth-child(6), .light2 > i:nth-child(6) {
+    animation: lamp6 714ms linear infinite 12s;
+    color: red;
+    font-weight: 700;
+    opacity: 0;
+    font-size: 1.5rem;
+    transform: rotateX(180deg); }
+@keyframes lamp6 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+  .light > i:nth-child(7), .light1 > i:nth-child(7), .light2 > i:nth-child(7) {
+    animation: lamp7 908ms linear infinite 12s;
+    color: red;
+    font-weight: 700;
+    opacity: 0;
+    font-size: 1.5rem;
+    transform: rotateX(180deg); }
+@keyframes lamp7 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+  .light > i:nth-child(8), .light1 > i:nth-child(8), .light2 > i:nth-child(8) {
+    animation: lamp8 579ms linear infinite 12s;
+    color: red;
+    font-weight: 700;
+    opacity: 0;
+    font-size: 1.5rem;
+    transform: rotateX(180deg); }
+@keyframes lamp8 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+  .light > i:nth-child(9), .light1 > i:nth-child(9), .light2 > i:nth-child(9) {
+    animation: lamp9 761ms linear infinite 12s;
+    color: red;
+    font-weight: 700;
+    opacity: 0;
+    font-size: 1.5rem;
+    transform: rotateX(180deg); }
+@keyframes lamp9 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+  .light > i:nth-child(10), .light1 > i:nth-child(10), .light2 > i:nth-child(10) {
+    animation: lamp10 581ms linear infinite 12s;
+    color: red;
+    font-weight: 700;
+    opacity: 0;
+    font-size: 1.5rem;
+    transform: rotateX(180deg); }
+@keyframes lamp10 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+  .light > i:nth-child(11), .light1 > i:nth-child(11), .light2 > i:nth-child(11) {
+    animation: lamp11 550ms linear infinite 12s;
+    color: red;
+    font-weight: 700;
+    opacity: 0;
+    font-size: 1.5rem;
+    transform: rotateX(180deg); }
+@keyframes lamp11 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+  .light > i:nth-child(12), .light1 > i:nth-child(12), .light2 > i:nth-child(12) {
+    animation: lamp12 710ms linear infinite 12s;
+    color: red;
+    font-weight: 700;
+    opacity: 0;
+    font-size: 1.5rem;
+    transform: rotateX(180deg); }
+@keyframes lamp12 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+  .light > i:nth-child(13), .light1 > i:nth-child(13), .light2 > i:nth-child(13) {
+    animation: lamp13 816ms linear infinite 12s;
+    color: red;
+    font-weight: 700;
+    opacity: 0;
+    font-size: 1.5rem;
+    transform: rotateX(180deg); }
+@keyframes lamp13 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+  .light > i:nth-child(14), .light1 > i:nth-child(14), .light2 > i:nth-child(14) {
+    animation: lamp14 507ms linear infinite 12s;
+    color: red;
+    font-weight: 700;
+    opacity: 0;
+    font-size: 1.5rem;
+    transform: rotateX(180deg); }
+@keyframes lamp14 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+  .light > i:nth-child(15), .light1 > i:nth-child(15), .light2 > i:nth-child(15) {
+    animation: lamp15 800ms linear infinite 12s;
+    color: red;
+    font-weight: 700;
+    opacity: 0;
+    font-size: 1.5rem;
+    transform: rotateX(180deg); }
+@keyframes lamp15 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+  .light > i:nth-child(16), .light1 > i:nth-child(16), .light2 > i:nth-child(16) {
+    animation: lamp16 731ms linear infinite 12s;
+    color: red;
+    font-weight: 700;
+    opacity: 0;
+    font-size: 1.5rem;
+    transform: rotateX(180deg); }
+@keyframes lamp16 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+  .light > i:nth-child(17), .light1 > i:nth-child(17), .light2 > i:nth-child(17) {
+    animation: lamp17 766ms linear infinite 12s;
+    color: red;
+    font-weight: 700;
+    opacity: 0;
+    font-size: 1.5rem;
+    transform: rotateX(180deg); }
+@keyframes lamp17 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+  .light > i:nth-child(18), .light1 > i:nth-child(18), .light2 > i:nth-child(18) {
+    animation: lamp18 506ms linear infinite 12s;
+    color: red;
+    font-weight: 700;
+    opacity: 0;
+    font-size: 1.5rem;
+    transform: rotateX(180deg); }
+@keyframes lamp18 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light1 > i:nth-child(1) {
+  animation: lamp1 891ms linear infinite 12s;
+  color: blue;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp1 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light1 > i:nth-child(2) {
+  animation: lamp2 937ms linear infinite 12s;
+  color: blue;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp2 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light1 > i:nth-child(3) {
+  animation: lamp3 557ms linear infinite 12s;
+  color: blue;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp3 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light1 > i:nth-child(4) {
+  animation: lamp4 958ms linear infinite 12s;
+  color: blue;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp4 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light1 > i:nth-child(5) {
+  animation: lamp5 802ms linear infinite 12s;
+  color: blue;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp5 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light1 > i:nth-child(6) {
+  animation: lamp6 969ms linear infinite 12s;
+  color: blue;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp6 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light1 > i:nth-child(7) {
+  animation: lamp7 697ms linear infinite 12s;
+  color: blue;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp7 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light1 > i:nth-child(8) {
+  animation: lamp8 503ms linear infinite 12s;
+  color: blue;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp8 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light1 > i:nth-child(9) {
+  animation: lamp9 685ms linear infinite 12s;
+  color: blue;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp9 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light1 > i:nth-child(10) {
+  animation: lamp10 719ms linear infinite 12s;
+  color: blue;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp10 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light1 > i:nth-child(11) {
+  animation: lamp11 793ms linear infinite 12s;
+  color: blue;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp11 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light1 > i:nth-child(12) {
+  animation: lamp12 596ms linear infinite 12s;
+  color: blue;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp12 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light1 > i:nth-child(13) {
+  animation: lamp13 963ms linear infinite 12s;
+  color: blue;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp13 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light1 > i:nth-child(14) {
+  animation: lamp14 581ms linear infinite 12s;
+  color: blue;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp14 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light1 > i:nth-child(15) {
+  animation: lamp15 701ms linear infinite 12s;
+  color: blue;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp15 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light1 > i:nth-child(16) {
+  animation: lamp16 875ms linear infinite 12s;
+  color: blue;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp16 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light1 > i:nth-child(17) {
+  animation: lamp17 954ms linear infinite 12s;
+  color: blue;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp17 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light1 > i:nth-child(18) {
+  animation: lamp18 550ms linear infinite 12s;
+  color: blue;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp18 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light2 > i:nth-child(1) {
+  animation: lamp1 677ms linear infinite 12s;
+  color: orange;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp1 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light2 > i:nth-child(2) {
+  animation: lamp2 987ms linear infinite 12s;
+  color: orange;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp2 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light2 > i:nth-child(3) {
+  animation: lamp3 707ms linear infinite 12s;
+  color: orange;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp3 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light2 > i:nth-child(4) {
+  animation: lamp4 980ms linear infinite 12s;
+  color: orange;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp4 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light2 > i:nth-child(5) {
+  animation: lamp5 798ms linear infinite 12s;
+  color: orange;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp5 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light2 > i:nth-child(6) {
+  animation: lamp6 807ms linear infinite 12s;
+  color: orange;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp6 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light2 > i:nth-child(7) {
+  animation: lamp7 510ms linear infinite 12s;
+  color: orange;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp7 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light2 > i:nth-child(8) {
+  animation: lamp8 680ms linear infinite 12s;
+  color: orange;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp8 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light2 > i:nth-child(9) {
+  animation: lamp9 771ms linear infinite 12s;
+  color: orange;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp9 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light2 > i:nth-child(10) {
+  animation: lamp10 887ms linear infinite 12s;
+  color: orange;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp10 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light2 > i:nth-child(11) {
+  animation: lamp11 890ms linear infinite 12s;
+  color: orange;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp11 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light2 > i:nth-child(12) {
+  animation: lamp12 866ms linear infinite 12s;
+  color: orange;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp12 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light2 > i:nth-child(13) {
+  animation: lamp13 884ms linear infinite 12s;
+  color: orange;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp13 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light2 > i:nth-child(14) {
+  animation: lamp14 755ms linear infinite 12s;
+  color: orange;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp14 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light2 > i:nth-child(15) {
+  animation: lamp15 599ms linear infinite 12s;
+  color: orange;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp15 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light2 > i:nth-child(16) {
+  animation: lamp16 854ms linear infinite 12s;
+  color: orange;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp16 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light2 > i:nth-child(17) {
+  animation: lamp17 885ms linear infinite 12s;
+  color: orange;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp17 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.light2 > i:nth-child(18) {
+  animation: lamp18 969ms linear infinite 12s;
+  color: orange;
+  font-weight: 700;
+  opacity: 0;
+  font-size: 1.5rem;
+  transform: rotateX(180deg); }
+@keyframes lamp18 {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+.earth-img {
+  width: 100vw;
+  position: absolute;
+  left: -50%;
+  top: 80%;
+  text-align: left;
+  z-index: -3;
+  animation: earth 60s linear infinite; }
+
+@keyframes earth {
+  to {
+    transform: rotate(360deg); } }
+
+/*# sourceMappingURL=style.css.map */

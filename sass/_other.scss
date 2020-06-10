@@ -1,0 +1,203 @@
+@mixin star{
+  color: red;
+  font-size: 5rem;
+  animation: star 3s linear infinite 12s alternate;
+  opacity: 0.1;
+
+  @keyframes star {
+    from{
+      opacity: 1;
+    }
+    to{
+      color: yellow;
+      transform: rotateY(360deg);
+      opacity: 1;
+    }
+  }
+}
+@mixin tree($w) {
+  @for $i from 1 through 9 {
+    img:nth-child(#{$i}), div:nth-child(#{$i}){
+      width: $w*$i;
+    }
+  }
+}
+@mixin cloud{
+  @for $i from 1 through 50 {
+    $fs: random(5) !global;
+    $fs1: random(5) !global;
+    $name: cloud !global;
+    $left: random(100) !global;
+    $top: random(5) !global;
+    $left1: random(100) !global;
+    $top1: random(5) !global;
+
+    >i:nth-child(#{$i}){
+      font-size: $fs*1rem;
+      color: gray;
+      animation: cloud#{$i} 50000ms linear infinite alternate;
+      position: absolute;
+      left: $left*1%;
+      top: $top*1vh;
+      z-index: -1;
+
+      @keyframes cloud#{$i} {
+        from{}
+        to{
+          font-size: $fs1*1rem;
+          left: $left1*1%;
+          top: $top1*1%;
+        }
+      }
+    }
+  }
+}
+@mixin lamp ($color) {
+  @for $i from 1 through 18 {
+    $name: lamp;
+    $time: random(500) + 500ms;
+
+    >i:nth-child(#{$i}){
+      animation: lamp#{$i} $time linear infinite 12s;
+      color: $color;
+      font-weight: 700;
+      opacity: 0;
+      font-size: 1.5rem;
+      transform: rotateX(180deg);
+
+      @keyframes lamp#{$i} {
+        from{
+          opacity: 0.5;
+        }
+        to{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+@mixin rocket($q, $p, $l, $t, $fs){
+  @for $i from $q through $p{
+    $name: rocket;
+    $time: random(5)+12s;
+    $transform: rotate(random(360)*1deg);
+    $color: rgb(random(255), random(255), random(255));
+    $left: random(45)+50%;
+    $top: random(30)+20%;
+    $color1: rgb(random(255), random(255), random(255));
+    $left1: random(45)+50%;
+    $top1: random(30)+20%;
+    $color2: rgb(random(255), random(255), random(255));
+    $left2: random(45)+50%;
+    $top2: random(30)+20%;
+    $color3: rgb(random(255), random(255), random(255));
+    $left3: random(45)+50%;
+    $top3: random(30)+20%;
+    $color4: rgb(random(255), random(255), random(255));
+    $left4: random(45)+50%;
+    $top4: random(30)+20%;
+    $color5: rgb(random(255), random(255), random(255));
+    $left5: random(45)+50%;
+    $top5: random(30)+20%;
+    $color6: rgb(random(255), random(255), random(255));
+    $left6: random(45)+50%;
+    $top6: random(30)+20%;
+    $color7: rgb(random(255), random(255), random(255));
+    $left7: random(45)+50%;
+    $top7: random(30)+20%;
+    $color8: rgb(random(255), random(255), random(255));
+    $left8: random(45)+50%;
+    $top8: random(30)+20%;
+    $color9: rgb(random(255), random(255), random(255));
+
+    >span:nth-child(#{$i}){
+      animation: rocket#{$i} 30s ease-out $time forwards;
+      font-size: 1px;
+      font-weight: 700;
+      position: absolute;
+      left: 20%;
+      top: 100%;
+
+      @keyframes rocket#{$i} {
+        0% {}
+        10% {
+          color: $color;
+          left: $left;
+          top: $top;
+        }
+        20% {
+          color: $color1;
+          left: $left1;
+          top: $top1;
+        }
+        30% {
+          color: $color2;
+          left: $left2;
+          top: $top2;
+        }
+        40% {
+          color: $color3;
+          left: $left3;
+          top: $top3;
+        }
+        50% {
+          color: $color4;
+          left: $left4;
+          top: $top4;
+        }
+        60% {
+          color: $color5;
+          left: $left5;
+          top: $top5;
+        }
+        70% {
+          color: $color6;
+          left: $left6;
+          top: $top6;
+        }
+        80% {
+          color: $color7;
+          left: $left7;
+          top: $top7;
+        }
+        90% {
+          color: $color8;
+          left: $left8;
+          top: $top8;
+          transform: $transform;
+        }
+        100% {
+          color: $color9;
+          left: 7*$i+$l*1%;
+          top: $t*1%;
+          font-size: $fs*1rem;
+          transform: none;
+        }
+      }
+    }
+  }
+}
+@mixin stars{
+  @for $i from 1 through 50{
+    $left: random(100);
+    $top: random(100);
+    $color: rgb(random(255), random(255), random(255));
+
+    >i:nth-child(#{$i}){
+      position: absolute;
+      left: $left*1%;
+      top: $top*1%;
+      color: white;
+      font-size: 3px;
+      animation: stars#{$i} 1s linear infinite;
+      z-index: -5;
+
+      @keyframes stars#{$i} {
+        from{}
+        to{
+          font-size: 5px;
+        }
+      }
+    }
+  }
+}

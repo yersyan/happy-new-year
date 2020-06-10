@@ -1,0 +1,85 @@
+@import "_other.scss";
+@import "_clock.scss";
+@import "_letter.scss";
+
+html{
+  font-size: 10px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #000;
+  font-style: italic;
+}
+.container{
+  position: relative;
+  overflow: hidden;
+  border: 0.5vw solid blue;
+  @include stars;
+}
+.container-tree{
+  width: 50vw;
+  padding-top: 2rem;
+  text-align: center;
+  margin: 0 3vw;
+  position: relative;
+}
+.star{
+  @include star;
+}
+.airplane-img{
+  display: block;
+  height: 7vh;
+  margin: 0 auto;
+}
+.tree{
+  @include tree(2vw);
+  display: inline-block;
+  position: relative;
+}
+.cloud{
+  @include cloud;
+  position: relative;
+  margin: 0 auto;
+  height: 10vh;
+}
+.lights{
+  position: absolute;
+  opacity: 0.5;
+  bottom: 0;
+}
+.light{
+  margin: 4vh auto 0;
+  height: 3vh;
+  border-radius: 50% 50% 40% 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  @include lamp(red);
+}
+.light1{
+  @extend .light;
+  @include lamp(blue);
+}
+.light2{
+  @extend .light;
+  @include lamp(orange);
+}
+.earth-img{
+  width: 100vw;
+  position: absolute;
+  left: -50%;
+  top: 80%;
+  text-align: left;
+  z-index: -3;
+  animation: earth 60s linear infinite;
+}
+@keyframes earth {
+  from{}
+  to{
+    transform: rotate(360deg);
+  }
+}
